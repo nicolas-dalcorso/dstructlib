@@ -1,0 +1,11 @@
+/.editorconfig
+/.vscode
+/README.md
+/algebraic.py
+/benchmark.txt
+/benchmarking_results.txt
+/dsltypes
+/dsltypes.c
+/dsltypes.h
+/main
+/preorder.py
