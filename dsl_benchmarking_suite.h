@@ -1,5 +1,5 @@
-#ifndef DSL_BENCHMARKING_SUIT_H
-#define DSL_BENCHMARKING_SUIT_H
+#ifndef DSL_BENCHMARKING_SUITE_H
+#define DSL_BENCHMARKING_SUITE_H
 
 /*
     Interface for the functions and structs necessary to benchmarking the datastructures and algorithms implemented in the DSL.

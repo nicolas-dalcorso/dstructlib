@@ -24,7 +24,7 @@
 #include <time.h>
 #include "dsl_lists.h"
 #include "dsl_listsort.h"
-#include "dsl_benchmarking_suit.h"
+#include "dsl_benchmarking_suite.h"
 
 #define LIST_SIZE 1000
 

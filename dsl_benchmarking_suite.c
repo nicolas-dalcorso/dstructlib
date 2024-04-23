@@ -5,7 +5,7 @@
     v1.0 2024-03-27
 */
 
-#include "dsl_benchmarking_suit.h"
+#include "dsl_benchmarking_suite.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -27,7 +27,13 @@ int compare_int(void* a, void* b) {
     return *(int*)a - *(int*)b;
 };
 
-
+/*
+    mean
+    Given a array of doubles and its size, returns the mean of all elements
+    @param double[] values
+    @param int size
+    @returns double
+*/
 double mean(double values[], int size) {
     double accumulator = 0.0;
     for(int i = 0; i < size; i++) {
@@ -36,6 +42,14 @@ double mean(double values[], int size) {
     return accumulator / size;
 };
 
+
+/*
+    sum
+    Given a array of doubles and its size, returns the sum of all elements
+    @param double[] values
+    @param int size
+    @returns double
+*/
 double sum(double values[], int size) {
     double accumulator = 0.0;
     for(int i = 0; i < size; i++) {
@@ -97,7 +111,13 @@ double harmonic_mean(double* values, int size){
     return size / accumulator;
 };
 
-
+/*
+    variance
+    Given a array of doubles and its size, returns the variance
+    @param double[] values
+    @param int size
+    @returns double
+*/
 double variance(double values[], int size) {
     double mean_value = mean(values, size);
     double accumulator = 0.0;
@@ -107,6 +127,14 @@ double variance(double values[], int size) {
     return accumulator / size;
 };
 
+
+/*
+    standard_deviation
+    Given a array of doubles and its size, returns the standard deviation
+    @param double[] values
+    @param int size
+    @returns double
+*/
 double standard_deviation(double values[], int size) {
     return sqrt(variance(values, size));
 };
